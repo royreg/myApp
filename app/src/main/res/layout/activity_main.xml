@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.roy.newapp.MainActivity"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Welcome To my App!"
+            android:textColor="#ffffffff"
+            android:id="@+id/mainTitle"
+            android:textSize="60px"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hell0 Welcome,this is the main menu of the App
+            click on the first button to go the Text to speech machine"
+            android:textColor="#e3e34c"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/connector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To TextToSpeech app"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press the button to get
+ to the quot Machine"
+            android:textColor="#e3e34c"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/quoteMachine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To Quote machine"
+            android:textAlignment="center"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
