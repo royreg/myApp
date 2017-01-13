@@ -64,7 +64,7 @@ public class TextToSpeechActivity extends AppCompatActivity
 
 
 
-        arraylst=new ArrayList<String>();
+        arraylst=((myApplication) getApplicationContext()).globalList;
         adaptr=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,arraylst);
         listView.setAdapter(adaptr);
 
@@ -135,7 +135,7 @@ public class TextToSpeechActivity extends AppCompatActivity
         if(view==input){
             if(firstClick)
                 input.setText("");
-            firstClick=false;;
+            firstClick=false;
         }
 
     }
