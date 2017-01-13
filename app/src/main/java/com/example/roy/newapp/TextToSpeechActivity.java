@@ -31,7 +31,8 @@ import java.util.List;
 import static android.R.attr.id;
 
 public class TextToSpeechActivity extends AppCompatActivity
-        implements AdapterView.OnItemClickListener,View.OnClickListener {
+        implements AdapterView.OnItemClickListener,View.OnClickListener,
+        AdapterView.OnItemLongClickListener {
     private Button enterButton;
     private EditText input;
     private TextView textv;
@@ -71,6 +72,7 @@ public class TextToSpeechActivity extends AppCompatActivity
         initTTS();
         listView.setOnItemClickListener(this);
         enterButton.setOnClickListener(this);
+        listView.setOnItemLongClickListener(this);
         input.setOnClickListener(this);
 
 
@@ -146,6 +148,13 @@ public class TextToSpeechActivity extends AppCompatActivity
             tts.shutdown();
         }
         super.onDestroy();
+    }
+
+    @Override
+    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int pos, long ld) {
+        arraylst.remove(pos);
+        adaptr.notifyDataSetChanged();
+        return true;
     }
 }
 
