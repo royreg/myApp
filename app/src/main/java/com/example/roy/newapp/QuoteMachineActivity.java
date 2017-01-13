@@ -12,6 +12,8 @@ public class QuoteMachineActivity extends AppCompatActivity implements View.OnCl
     TextView quoteTxt;
     TextView autTxt;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
